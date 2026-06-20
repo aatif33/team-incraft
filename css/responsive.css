@@ -354,8 +354,11 @@ section{
     display:none;
 
 }
+.features-grid{
 
-}
+    grid-template-columns:1fr;
+
+}}
 
 
 /*==================================================
