@@ -29,6 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+const currentPage = window.location.pathname.split("/").pop();
+const form = document.querySelector(".contact-form");
+const btn = document.getElementById("submitBtn");
 /*==================================================
 WINDOW LOAD
 ==================================================*/
@@ -63,6 +67,7 @@ window.addEventListener("load", () => {
 });
 
 
+
 /*==================================================
 LOADER
 ==================================================*/
@@ -74,6 +79,48 @@ function loaderAnimation(){
     if(!loader) return;
 
 }
+const counters = document.querySelectorAll(".counter");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        const counter = entry.target;
+        const target = Number(counter.dataset.target);
+
+        let current = 0;
+
+        const increment = Math.max(1, Math.ceil(target / 80));
+
+        const timer = setInterval(() => {
+
+            current += increment;
+
+            if (current >= target) {
+
+                counter.textContent = target;
+                clearInterval(timer);
+
+            } else {
+
+                counter.textContent = current;
+
+            }
+
+        }, 20);
+
+        observer.unobserve(counter);
+
+    });
+
+}, {
+    threshold: 0.4
+});
+
+counters.forEach(counter => observer.observe(counter));
+
 
 
 /*==================================================
@@ -398,7 +445,6 @@ document.querySelectorAll(".primary-btn,.secondary-btn").forEach(button=>{
 
     button.addEventListener("click",(e)=>{
 
-        const ripple=document.createElement("span");
 
         const rect=button.getBoundingClientRect();
 
@@ -436,13 +482,33 @@ window.addEventListener("beforeunload",()=>{
 });
 
 
-/*==================================================
-CONSOLE MESSAGE
-==================================================*/
 
-console.log("%cTeam INCRAFT","color:#27C5D6;font-size:28px;font-weight:bold;");
 
-console.log("%cEngineering • Sustainability • Europe 2026","color:#0C6B73;font-size:14px;");
+form.addEventListener("submit", () => {
+
+    btn.innerHTML = "Sending...";
+    btn.disabled = true;
+
+});
+
+
+document.querySelectorAll(".bottom-nav .nav-item").forEach(item => {
+
+    const href = item.getAttribute("href");
+
+    item.classList.remove("active");
+
+    if (href === currentPage) {
+
+        item.classList.add("active");
+
+    }});
+
+
+/*==========================
+Animated Counter
+==========================*/
+
 
 
 /*==================================================

@@ -260,7 +260,15 @@ TABLET
 }
 
 }
+@media(min-width:769px){
 
+.bottom-nav{
+
+    display:none;
+
+}
+
+}
 
 /*==================================================
 TABLET
@@ -268,7 +276,30 @@ TABLET
 ====================================================*/
 
 @media (max-width:768px){
+    .mission-vision{
 
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+}
+    
+.nav-links{
+
+    display:none;
+
+}
+
+.support-btn{
+
+    display:none;
+
+}
+
+.mobile-toggle{
+
+    display:none;
+}
 section{
 
     padding:90px 0;
@@ -447,10 +478,242 @@ MOBILE
 ====================================================*/
 
 @media (max-width:480px){
+    .mission-vision{
+
+    padding:70px 0;
+
+}
+
+.mission-card,
+.vision-card{
+
+    flex-direction:column;
+
+    text-align:left;
+
+    padding:28px;
+
+}
+
+.mission-icon,
+.vision-icon{
+
+    width:65px;
+    height:65px;
+
+    min-width:65px;
+
+}
+
+.mission-icon img,
+.vision-icon img{
+
+    width:34px;
+    height:34px;
+
+}
+
+.mission-content h3,
+.vision-content h3{
+
+    font-size:1.55rem;
+
+}
+
+.mission-content p,
+.vision-content p{
+
+    font-size:.95rem;
+
+}
+
+    
+.navbar .logo-box{
+    width:80%
+}
+.scroll-indicator p{
+    margin-top: 20px;
+    margin-left: 300%;
+}
+.hero-home .hero-content{
+
+    align-items:flex-start;
+    text-align:left;
+
+}
+
+.hero-home h1{
+
+    font-size:2.55rem;
+    line-height:1.02;
+    text-align:left;
+
+}
+
+.hero-home .hero-description{
+
+    text-align:left;
+    font-size:.95rem;
+    line-height:1.7;
+    max-width:320px;
+    margin:18px 0 28px;
+
+}
+
+.hero-home .hero-tag{
+
+    text-align:left;
+}
+
+.hero-home .hero-buttons{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    gap:12px;
+    width:100%;
+
+}
+
+.hero-home .primary-btn,
+.hero-home .secondary-btn{
+
+    width:150px;
+    height:48px;
+
+    padding:0 18px;
+
+    font-size:.9rem;
+
+    border-radius:50px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    white-space:nowrap;
+
+}
+.hero .hero-content{
+
+    align-items:flex-start;
+    text-align:left;
+
+}
+
+.hero h1{
+
+    font-size:2.55rem;
+    line-height:1.02;
+    text-align:left;
+
+}
+
+.hero .hero-description{
+
+    text-align:left;
+    font-size:.95rem;
+    line-height:1.7;
+    max-width:320px;
+    margin:18px 0 28px;
+
+}
+
+.hero .hero-tag{
+
+    text-align:left;
+}
+
+.hero .hero-buttons{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    gap:12px;
+    width:100%;
+
+}
+
+.hero .primary-btn,
+.hero .secondary-btn{
+
+    width:150px;
+    height:48px;
+
+    padding:0 18px;
+
+    font-size:.9rem;
+
+    border-radius:50px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    white-space:nowrap;
+
+}
+    .stats-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stat-card{
+
+    padding:28px 15px;
+
+}
+.hero-tag{
+    font-size:.8rem;
+    margin-bottom: 10px;
+}
+
+.stat-card:nth-child(2){
+
+    border-right:none;
+
+}
+
+.stat-card:nth-child(1),
+.stat-card:nth-child(2){
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.stat-card h2{
+
+    font-size:2.4rem;
+
+}
+
+.stat-icon{
+
+    width:50px;
+    height:50px;
+
+    font-size:1.2rem;
+
+}
+.form-buttons{
+
+    flex-direction:column;
+
+}
+
+.form-buttons button{
+
+    width:100%;
+
+}
 
 section{
 
     padding:70px 0;
+    
 
 }
 
@@ -509,6 +772,11 @@ section{
     height:270px;
 
 }
+.about-image1{
+
+    height:270px;
+
+}
 
 .team-image{
 
@@ -543,7 +811,7 @@ section{
 
 .section-heading{
 
-    margin-bottom:45px;
+    margin-bottom:4px;
 
 }
 
@@ -591,18 +859,41 @@ section{
 }
 
 .footer-socials{
+     gap:16px;
+    flex-wrap:wrap;
 
     justify-content:center;
 
 }
 
-.footer-logo,
-.footer-kct-logo{
+.footer-logo{
 
     margin-inline:auto;
 
 }
+.footer-kct-logo{
 
+    width:100%;
+    max-width:280px;
+    height:auto;
+    margin-inline:auto;
+
+}
+.footer-top{
+
+    grid-template-columns:1fr;
+    gap:45px;
+
+}
+.feature-track1{
+    width: 150%;
+}
+.features-title1 h3{
+    font-size: 0.7rem;
+}
+.mobile-features1 .feature-card1 h2{
+    font-size: 1.7rem;
+}
 }
 
 
@@ -626,6 +917,8 @@ SMALL MOBILE
 }
 
 .about-image{
+
+    margin-top: 0;
 
     height:230px;
 
