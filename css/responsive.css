@@ -478,7 +478,7 @@ MOBILE
 ====================================================*/
 
 @media (max-width:480px){
-    .mission-vision{
+.mission-vision{
 
     padding:70px 0;
 
@@ -492,7 +492,8 @@ MOBILE
     text-align:left;
 
     padding:28px;
-
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .mission-icon,
@@ -533,7 +534,7 @@ MOBILE
 }
 .scroll-indicator p{
     margin-top: 20px;
-    margin-left: 300%;
+    margin-left: 15%;
 }
 .hero-home .hero-content{
 
@@ -844,7 +845,31 @@ section{
     gap:30px;
 
 }
+.countdown-card{
 
+    margin:28px 0;
+
+    padding:18px;
+
+}
+
+.countdown-grid{
+
+    gap:10px;
+
+}
+
+.countdown-box h2{
+
+    font-size:1.6rem;
+
+}
+
+.countdown-box span{
+
+    font-size:.65rem;
+
+}
 .sponsor-logo{
 
     width:130px;

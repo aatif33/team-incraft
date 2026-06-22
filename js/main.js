@@ -28,7 +28,56 @@ document.addEventListener("DOMContentLoaded", () => {
     floatingHero();
 
 });
+/*==================================================
+EUROPE COUNTDOWN
+====================================================*/
 
+const targetDate = new Date("July 06, 2026 09:00:00").getTime();
+
+const dayEl = document.getElementById("days");
+const hourEl = document.getElementById("hours");
+const minuteEl = document.getElementById("minutes");
+const secondEl = document.getElementById("seconds");
+
+if(dayEl){
+
+    function updateCountdown(){
+
+        const now = new Date().getTime();
+
+        const distance = targetDate - now;
+
+        if(distance <= 0){
+
+            document.querySelector(".countdown-card").innerHTML=`
+
+                <p class="countdown-title">
+
+                    🇮🇳 TEAM INCRAFT IS NOW COMPETING AT EUROPE 2026
+
+                </p>
+
+            `;
+
+            return;
+
+        }
+
+        dayEl.textContent=Math.floor(distance/(1000*60*60*24));
+
+        hourEl.textContent=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+        minuteEl.textContent=Math.floor((distance%(1000*60*60))/(1000*60));
+
+        secondEl.textContent=Math.floor((distance%(1000*60))/1000);
+
+    }
+
+    updateCountdown();
+
+    setInterval(updateCountdown,1000);
+
+}
 
 const currentPage = window.location.pathname.split("/").pop();
 const form = document.querySelector(".contact-form");
@@ -506,7 +555,7 @@ document.querySelectorAll(".bottom-nav .nav-item").forEach(item => {
 
 
 /*==========================
-Animated Counter
+Animated donter
 ==========================*/
 
 
