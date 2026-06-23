@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 EUROPE COUNTDOWN
 ====================================================*/
 
-const targetDate = new Date("July 06, 2026 09:00:00").getTime();
+const targetDate = new Date("June 28, 2026 09:00:00").getTime();
 
 const dayEl = document.getElementById("days");
 const hourEl = document.getElementById("hours");
