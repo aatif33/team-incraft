@@ -283,16 +283,6 @@ LOADER
 }
 
 
-.loader-submarine{
-
-    width:280px;
-
-    animation:float 3s ease-in-out infinite;
-
-    z-index:10;
-
-}
-
 .loader-logo{
 
     width:180px;
@@ -302,56 +292,9 @@ LOADER
     opacity:0;
 
     animation:logoReveal 1s forwards;
-    animation-delay:2s;
+    animation-delay:1s;
 
 }
-
-.bubble-layer{
-
-    position:absolute;
-
-    inset:0;
-
-}
-
-.bubble-layer img{
-
-    position:absolute;
-
-    width:40px;
-
-    animation:bubbles 8s linear infinite;
-
-}
-
-.bubble-layer img:nth-child(1){
-
-    left:15%;
-    bottom:-80px;
-
-}
-
-.bubble-layer img:nth-child(2){
-
-    left:40%;
-    bottom:-60px;
-
-}
-
-.bubble-layer img:nth-child(3){
-
-    right:18%;
-    bottom:-120px;
-
-}
-
-.bubble-layer img:nth-child(4){
-
-    right:35%;
-    bottom:-80px;
-
-}
-
 .sonar-circle{
 
     position:absolute;
@@ -363,19 +306,19 @@ LOADER
 
     border:2px solid rgba(39,197,214,.5);
 
-    animation:sonar 2.5s infinite;
+    animation:sonar 1.5s infinite;
 
 }
 
 .sonar-2{
 
-    animation-delay:.8s;
+    animation-delay:.4s;
 
 }
 
 .sonar-3{
 
-    animation-delay:1.6s;
+    animation-delay:1s;
 
 }
 

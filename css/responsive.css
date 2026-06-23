@@ -782,7 +782,8 @@ section{
 
 }
 .team-card{
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
     height: 250px;
     width: 300px;
 }
