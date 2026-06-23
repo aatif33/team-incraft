@@ -113,7 +113,7 @@ Designed and developed for **Team INCRAFT**.
 
 **Team INCRAFT**
 
-📩 teamincraft@gmail.com
+📩 teamincraft@kct.ac.in
 
 ---
 
